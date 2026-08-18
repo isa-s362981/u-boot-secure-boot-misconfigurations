@@ -1,0 +1,30 @@
+# Private keys and sensitive material
+*.key
+*.pem
+
+# Generated certificates and signed artifacts
+*.crt
+*.itb
+*.img
+*.bin
+
+# Device-tree build outputs
+*.dtb
+
+# U-Boot build outputs
+u-boot
+u-boot.bin
+u-boot.map
+System.map
+
+# Logs / temporary files
+*.log
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Virtual / generated storage
+usb_drive/
+keys/

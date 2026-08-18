@@ -1,0 +1,36 @@
+/dts-v1/;
+
+/ {
+    description = "Secure Boot Kernel";
+    #address-cells = <1>;
+
+    images {
+        kernel {
+            data = /incbin/("dummy_kernel.bin");
+            type = "kernel";
+            arch = "arm";
+            os = "linux";
+            compression = "none";
+            load = <0x42000000>;
+            entry = <0x42000000>;
+
+            hash-1 {
+                algo = "sha256";
+            };
+        };
+    };
+
+    configurations {
+        default = "conf-1";
+
+        conf-1 {
+            kernel = "kernel";
+
+            signature-1 {
+                algo = "sha256,rsa2048";
+                key-name-hint = "dev1";
+                sign-images = "kernel";
+            };
+        };
+    };
+};
