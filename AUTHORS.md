@@ -9,4 +9,4 @@ University team project for **Cybersecurity for Embedded Systems**, Politecnico 
 Professor: Alessandro Savino  
 Project Assistant: Sadia Shamas
 
-If this repository is used in a portfolio, it should be presented as a **team project** rather than an individual project.
+
