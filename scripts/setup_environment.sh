@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Academic lab setup helper.
-# Choose the package-manager command appropriate for your distribution.
+
 
 if command -v apt >/dev/null 2>&1; then
     sudo apt update
